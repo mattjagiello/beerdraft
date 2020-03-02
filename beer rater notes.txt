@@ -1,0 +1,85 @@
+Beer Rater Notes / Methods / Actions
+
+- User Sign-in
+    - How will we accept user cookies/sessions?
+        - Review labs on these
+    - User should be able to create new account
+        - User.find_or_create_by method in 'New' controller action
+    - User is redirected to User Actions Page
+- User Actions Page
+    - Find a beer
+        - Redirected to beer show page
+    - Create a beer
+        - Redirected to beer new page
+    - Find a brewery
+    - Write a review
+        - Redirected to review new page
+    - Logout / Exit
+        - Redirected to User Sign-in page
+
+- Reviews
+    - Show page
+        - Review content
+        - User who wrote review
+        - Rating of beer
+        - Time review was written
+        - Brewery associated with review
+        - Number of likes
+    - New page
+        - Collection select to pick beer to review
+        - Text field to enter review content
+        - Text field to rate beer
+            - Need to limit this to numbers
+            - Ask Reese for method to input numbers in range
+        - After submitting review, user redirected to beer show page
+    
+- Beer 
+    - Index page
+        - Show collection select to pick from Name / Type / Strength
+            - Add field to table for Beers class
+        - Enter information in text field for selection
+            - Re-render page to display information from parameters
+                - Type selection will display top 10 beers as well as selected type
+                - Strength selection will display top beers for that strength only if light/heavy selected
+        - View top 10 rated beers (link/button)
+            - Redirected to top beers page (new controller action/route)
+    - Show page
+        - Beer name
+        - Beer type
+        - Beer reviews
+        - Beer ABV
+        - Beer strength
+        - Beer breweries
+        - Beer average rating
+        - Add a beer to user track list
+            - Redirected to User show page
+        - Remove beer from user track list
+            - Redirected to User show page
+        - Button to like beer
+            - Move 'like' field to Beer class
+    - New page
+        - Text field for beer name
+        - Text field for beer type
+        - Text/number field for beer ABV
+        - Text field for beer strength
+            - Enter instructions if beer in certain ABV limits, put into XYZ strength
+        - Collection check boxes to select breweries where beer is sold/made
+
+- Breweries
+    - Index page
+        - Show collection select to pick from Name / City / ZIP
+        - Enter information in text field for selection
+        - Re-render page to display information from parameters
+    - Show page
+        - Brewery name
+        - Brewery address
+        - Brewery city
+        - Brewery zip code
+        - Beers brewed/sold at brewery
+    - New page
+        - Text field for brewery name
+        - Text field for brewery address
+        - Text field for brewery city
+        - Text field for brewery zip code
+    - Edit page
+        - Can re-use form partial to display edit information
