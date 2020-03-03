@@ -4249,3 +4249,44 @@ Processing by ReviewsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms | Allocations: 7375)
 
 
+Started POST "/reviews" for 127.0.0.1 at 2020-03-03 15:37:59 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"XPYp9Sadxtn8lBON1WGBej2PARetC6A+1iOhzcuuI6c4HOSXsphlsHUO9sx/TyOTgssa9QvTAkHfrFZLDc3w/Q==", "review"=>{"content"=>"", "beer_id"=>"1", "user_id"=>"1", "rating"=>"4"}, "commit"=>"Create Review"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms | Allocations: 7225)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/reviews_controller.rb:9:in `create'
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-03 15:38:05 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.6ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 41.5ms | Allocations: 13579)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 59.2ms | ActiveRecord: 5.2ms | Allocations: 24676)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-03 15:38:06 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"XPYp9Sadxtn8lBON1WGBej2PARetC6A+1iOhzcuuI6c4HOSXsphlsHUO9sx/TyOTgssa9QvTAkHfrFZLDc3w/Q==", "review"=>{"content"=>"", "beer_id"=>"1", "user_id"=>"1", "rating"=>"4"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2019)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 0.8ms | Allocations: 9667)
+
+
