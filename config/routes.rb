@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root "users#main"
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
   resources :breweries, only: [:index, :new, :create, :show]
   resources :beers, only: [:index, :new, :create, :show, :delete]
   resources :reviews, only: [:new, :create, :index, :show, :delete]

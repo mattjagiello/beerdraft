@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
+  protect_from_forgery prepend: true, with: :exception
 
   def main
+  end
+
+  def login
+    @users = User.find(params[:id])
   end
 
   def new
