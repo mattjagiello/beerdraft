@@ -1,2 +1,15 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<p>Welcome to BeerDraft! Review these instructions to create an account and use the site:<br><br>
+1) Create a desired username. You cannot create a username that is already in use.<br>
+2) 
+
+<ul>
+<% @user.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+
+<%= form_for @user do |f| %>
+Enter username: <%= f.text_field :username %><br><br>
+<%= f.submit %>
+
+<% end %>
