@@ -1,2 +1,11 @@
 <h1>Breweries#new</h1>
 <p>Find me in app/views/breweries/new.html.erb</p>
+
+<%= form_for @brewery do |f| %>
+Name: <%= f.text_field :name %><br>
+Address: <%= f.text_field :address %><br>
+City: <%= f.text_field :city %><br>
+ZIP Code: <%= f.text_field :zip_code %><br>
+<br>
+<%= f.submit "Add Brewery" %>
+<% end %>
