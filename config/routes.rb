@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "users#main"
   resources :breweries, only: [:index, :new, :create, :show]
   resources :beers, only: [:index, :new, :create, :show, :delete]
   resources :reviews, only: [:new, :create, :index, :show, :delete]
