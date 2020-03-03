@@ -3,8 +3,10 @@
 
 <h2>List of reviews:</h2>
 <% @reviews.each do |review| %>
-Beer ID: <%= review.beer_id %><br>
+Beer Name: <% @beer = Beer.find_by(id: review.beer_id) %>
+<%= @beer.name %> <br>
 Content: <%= review.content %><br>
 Rating: <%= review.rating %><br>
+Timestamp: <%= review.created_at %>
 <br><br>
 <% end %>
