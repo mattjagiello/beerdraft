@@ -4976,3 +4976,664 @@ Processing by BreweriesController#new as HTML
 Completed 200 OK in 45ms (Views: 24.7ms | ActiveRecord: 0.7ms | Allocations: 11633)
 
 
+Started GET "/breweries/new" for 127.0.0.1 at 2020-03-03 16:33:15 -0600
+Processing by BreweriesController#new as HTML
+  Rendering breweries/new.html.erb within layouts/application
+  Rendered breweries/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5765)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:34:57 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 4474)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:36:51 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1395)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2746)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Name: <%= @brewery.name %><br></h1>
+    2: <br>
+    3: <h3>Address: <%= @brewery.address %></h3><br>
+    4: <br>
+  
+app/views/breweries/show.html.erb:1
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:37:32 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.7ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 11.4ms | ActiveRecord: 1.6ms | Allocations: 11000)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:37:48 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.2ms | Allocations: 5845)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:38:00 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5840)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:38:30 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 5834)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:38:37 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:38:44 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 5839)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:39:00 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 153)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5843)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:39:10 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 153)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.2ms | Allocations: 5836)
+
+
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeerBrewery Load (1.7ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Load (1.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Create (1.4ms)[0m  [1m[32mINSERT INTO "beer_breweries" ("beer_id", "brewery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["beer_id", 1], ["brewery_id", 1], ["created_at", "2020-03-03 22:39:44.348986"], ["updated_at", "2020-03-03 22:39:44.348986"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:41:02 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1058)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 2917)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @brewery.name %></h1>
+<p><%= @brewery.address %><br>
+<%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+
+Beers Sold:<%= BeerBrewery.find_by(id: @brewery %>
+):
+1:    <h1><%= @brewery.name %></h1>
+2:    <p><%= @brewery.address %><br>
+3:    <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+4:    
+5:    Beers Sold:<%= BeerBrewery.find_by(id: @brewery %>
+  
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/show.html.erb:7: syntax error, unexpected end, expecting ')'
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:41:24 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 19.0ms | Allocations: 6761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 1.3ms | Allocations: 12357)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:41:44 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3300)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 5150)
+
+
+  
+ActionView::Template::Error (undefined method `beers' for #<BeerBrewery:0x00007fdf702e54f8>
+Did you mean?  beer
+               beer=):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <%= brewery.beers %>
+  
+app/views/breweries/show.html.erb:6
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:41:50 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.1ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 19.4ms | Allocations: 9906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 1.1ms | Allocations: 15495)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:41:56 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.1ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1550)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 7251)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:42:17 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1085)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 2935)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @brewery.name %></h1>
+<p><%= @brewery.address %><br>
+<%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+
+Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+<%= brewery.beer.each do |beer| %>
+<%= beer.name %>
+):
+1:    <h1><%= @brewery.name %></h1>
+2:    <p><%= @brewery.address %><br>
+3:    <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+4:    
+5:    Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+6:    <%= brewery.beer.each do |beer| %>
+7:    <%= beer.name %>
+  
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/show.html.erb:9: syntax error, unexpected end-of-input, expecting end
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:42:26 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.1ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 4307)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms | Allocations: 6160)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Beer:0x00007fdf6db153b0>):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brewery.beer.each do |beer| %>
+    7: <%= beer.name %>
+    8: <% end %>
+  
+app/views/breweries/show.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (1.0ms)[0m  [1m[32mINSERT INTO "beers" ("name", "brand", "style", "abv", "strength", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beer 1"], ["brand", "Bad Beer"], ["style", "Ale"], ["abv", 6.5], ["strength", "Strong"], ["created_at", "2020-03-03 22:43:35.432697"], ["updated_at", "2020-03-03 22:43:35.432697"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Update (0.6ms)[0m  [1m[33mUPDATE "beers" SET "name" = ?, "updated_at" = ? WHERE "beers"."id" = ?[0m  [["name", "Beer 2"], ["updated_at", "2020-03-03 22:43:47.887836"], ["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Create (0.6ms)[0m  [1m[32mINSERT INTO "beer_breweries" ("beer_id", "brewery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["beer_id", 2], ["brewery_id", 1], ["created_at", "2020-03-03 22:44:00.283732"], ["updated_at", "2020-03-03 22:44:00.283732"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:44:12 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4084)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 5189)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Beer:0x00007fdf728bc988>):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brewery.beer.each do |beer| %>
+    7: <%= beer.name %>
+    8: <% end %>
+  
+app/views/breweries/show.html.erb:6
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 1]]
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" INNER JOIN "beer_breweries" ON "breweries"."id" = "beer_breweries"."brewery_id" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 11]]
+  [1m[36mBrewery Load (0.5ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" ORDER BY "breweries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBeer Load (0.5ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ? LIMIT ?[0m  [["brewery_id", 1], ["LIMIT", 11]]
+  [1m[36mBeer Load (0.4ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ? LIMIT ?[0m  [["brewery_id", 1], ["LIMIT", 11]]
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:47:17 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.1ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3295)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms | Allocations: 5148)
+
+
+  
+ActionView::Template::Error (undefined method `beers' for #<BeerBrewery:0x00007fdf721ca0a8>
+Did you mean?  beer
+               beer=):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brewery.beers.each do |beer| %>
+    7: <%= beer.name %>
+    8: <% end %>
+  
+app/views/breweries/show.html.erb:6
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:47:44 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1097)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 2951)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @brewery.name %></h1>
+<p><%= @brewery.address %><br>
+<%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+
+Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+<% brew_beers = brewery.beers 
+<% brew_beers do |beer| %>
+<%= beer.name %>
+<% end %>
+):
+1:    <h1><%= @brewery.name %></h1>
+2:    <p><%= @brewery.address %><br>
+3:    <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+4:    
+5:    Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+6:    <% brew_beers = brewery.beers 
+7:    <% brew_beers do |beer| %>
+8:    <%= beer.name %>
+9:    <% end %>
+  
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:47:52 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  Rendered breweries/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1095)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2949)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @brewery.name %></h1>
+<p><%= @brewery.address %><br>
+<%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+
+Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+<% brew_beers = brewery.beers 
+<% brew_beers.each do |beer| %>
+<%= beer.name %>
+<% end %>
+):
+1:    <h1><%= @brewery.name %></h1>
+2:    <p><%= @brewery.address %><br>
+3:    <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+4:    
+5:    Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+6:    <% brew_beers = brewery.beers 
+7:    <% brew_beers.each do |beer| %>
+8:    <%= beer.name %>
+9:    <% end %>
+  
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+app/views/breweries/show.html.erb:7: syntax error, unexpected '<', expecting end
+app/views/breweries/show.html.erb:7: syntax error, unexpected do, expecting end
+app/views/breweries/show.html.erb:11: syntax error, unexpected end, expecting end-of-input
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:48:05 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3310)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 5163)
+
+
+  
+ActionView::Template::Error (undefined method `beers' for #<BeerBrewery:0x00007fdf6ce5cab0>
+Did you mean?  beer
+               beer=):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brew_beers = brewery.beers %>
+    7: <%= brew_beers.each do |beer| %>
+    8: <%= beer.name %>
+    9: <% end %>
+  
+app/views/breweries/show.html.erb:6
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Load (0.8ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" ORDER BY "beer_breweries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBeer Load (0.6ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" INNER JOIN "beer_breweries" ON "breweries"."id" = "beer_breweries"."brewery_id" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBrewery Create (0.8ms)[0m  [1m[32mINSERT INTO "breweries" ("name", "address", "city", "zip_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Round Rock Beer"], ["address", "222 Round Rock Street"], ["city", "Round Rock"], ["zip_code", 54321], ["created_at", "2020-03-03 22:52:13.108256"], ["updated_at", "2020-03-03 22:52:13.108256"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Load (0.4ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.7ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Create (0.5ms)[0m  [1m[32mINSERT INTO "beer_breweries" ("beer_id", "brewery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["beer_id", 2], ["brewery_id", 2], ["created_at", "2020-03-03 22:52:23.398195"], ["updated_at", "2020-03-03 22:52:23.398195"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" INNER JOIN "beer_breweries" ON "breweries"."id" = "beer_breweries"."brewery_id" WHERE "beer_breweries"."beer_id" = ? LIMIT ?[0m  [["beer_id", 2], ["LIMIT", 11]]
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" ORDER BY "breweries"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ? LIMIT ?[0m  [["brewery_id", 2], ["LIMIT", 11]]
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ? LIMIT ?[0m  [["brewery_id", 2], ["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Load (0.9ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBeerBrewery Create (0.6ms)[0m  [1m[32mINSERT INTO "beer_breweries" ("beer_id", "brewery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["beer_id", 1], ["brewery_id", 2], ["created_at", "2020-03-03 22:54:23.611760"], ["updated_at", "2020-03-03 22:54:23.611760"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBeer Load (0.4ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ? LIMIT ?[0m  [["brewery_id", 2], ["LIMIT", 11]]
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-03 16:54:44 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3327)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms | Allocations: 5201)
+
+
+  
+ActionView::Template::Error (undefined method `beers' for #<BeerBrewery:0x00007fdf72158138>
+Did you mean?  beer
+               beer=):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brew_beers = brewery.beers %>
+    7: <%= brew_beers.each do |beer| %>
+    8: <%= beer.name %>
+    9: <% end %>
+  
+app/views/breweries/show.html.erb:6
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:54:46 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBeerBrewery Load (0.2ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  Rendered breweries/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3104)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 4209)
+
+
+  
+ActionView::Template::Error (undefined method `beers' for #<BeerBrewery:0x00007fdf6cf79600>
+Did you mean?  beer
+               beer=):
+    3: <%= @brewery.city %>, <%= @brewery.zip_code %></p><br>
+    4: 
+    5: Beers Sold:<%= brewery = BeerBrewery.find_by(id: @brewery) %>
+    6: <% brew_beers = brewery.beers %>
+    7: <%= brew_beers.each do |beer| %>
+    8: <%= beer.name %>
+    9: <% end %>
+  
+app/views/breweries/show.html.erb:6
+  [1m[36mBeerBrewery Load (0.3ms)[0m  [1m[34mSELECT "beer_breweries".* FROM "beer_breweries" WHERE "beer_breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:55:45 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 7496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.6ms | Allocations: 13089)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:56:05 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.4ms | Allocations: 7473)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:56:11 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms | Allocations: 7468)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:56:29 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:5
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:6
+  Rendered breweries/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 7473)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:56:48 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 7487)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:56:55 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1800)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.4ms | Allocations: 7493)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2020-03-03 16:57:11 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:14:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1801)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 7482)
+
+
