@@ -4236,3 +4236,16 @@ Processing by ReviewsController#index as HTML
 Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 1.2ms | Allocations: 5937)
 
 
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-03 15:34:56 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:10
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:13
+  Rendered reviews/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms | Allocations: 7375)
+
+
