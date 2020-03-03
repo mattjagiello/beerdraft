@@ -4894,3 +4894,57 @@ Processing by ReviewsController#new as HTML
 Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 1.0ms | Allocations: 12482)
 
 
+Started POST "/reviews" for 127.0.0.1 at 2020-03-03 15:57:45 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"MPUZF0t7evuLSciOGrDL+urDVtUKoC3+NfB3EaAtPuFUH9R1337ZkgLTLc+wnmkTVYdNN6x4j4E8f4CXZk7tuw==", "review"=>{"content"=>"", "beer_id"=>"1", "user_id"=>"1", "rating"=>"4"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 9565)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-03 15:57:57 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"WjmvRjjNJrdAz7SVvu4EONFN8g7F+WXJRA/mLUI2+Nc+02IkrMiF3slVUdQUwKbRbgnp7GMhx7ZNgBGrhFUrjQ==", "review"=>{"content"=>"This beer is great", "beer_id"=>"1", "user_id"=>"1", "rating"=>"4"}, "tracked"=>"1", "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["content", "This beer is great"], ["rating", 4], ["user_id", 1], ["beer_id", 1], ["created_at", "2020-03-03 21:57:57.922439"], ["updated_at", "2020-03-03 21:57:57.922439"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/reviews
+Completed 302 Found in 12ms (ActiveRecord: 2.4ms | Allocations: 4358)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2020-03-03 15:57:57 -0600
+Processing by ReviewsController#index as HTML
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 2696)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.5ms | Allocations: 6962)
+
+
+  [1m[36mBeer Load (1.8ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ? LIMIT ?[0m  [["beer_id", 1], ["LIMIT", 1]]
