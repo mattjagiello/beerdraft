@@ -4,10 +4,6 @@ class UsersController < ApplicationController
   def main
   end
 
-  # def login
-  #   @users = User.find(params[:id])
-  # end
-
   def new
     @user = User.new
   end
