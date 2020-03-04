@@ -9760,3 +9760,778 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.9ms | Allocations: 11669)
 
 
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:34:51 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:11
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:17
+  Rendered breweries/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 15.0ms | ActiveRecord: 1.2ms | Allocations: 13491)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:39:45 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5512)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:39:58 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 307)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5503)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:40:44 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5513)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:40:52 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 307)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5502)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:43:50 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 508.8ms | Allocations: 147537)
+Completed 500 Internal Server Error in 524ms (ActiveRecord: 1.3ms | Allocations: 154622)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `breweries_name' for #<#<Class:0x00007ff029430870>:0x00007ff02943aeb0>
+Did you mean?  breweries_name_url
+               breweries_path
+               breweries_url):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: Find brewery by:
+    4: <%= button_to "Name", breweries_name, method: :get %>
+    5: <br>
+    6: <%= button_to "City", root_path, method: :get %>
+    7: <br>
+  
+app/views/breweries/index.html.erb:4
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:44:05 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5515)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-04 09:44:07 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4437)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:44:08 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4473)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.6ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:46:42 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:6
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.3ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 5967)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:48:28 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1032)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2383)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Breweries#by_name</h1>
+<p>Find me in app/views/breweries/by_name.html.erb</p>
+
+<% breweries = Brewery.all %>
+<%= puts breweries_array = breweries.each.map {|x| x.name } %>
+<%= brewries_array.%>
+):
+1:    <h1>Breweries#by_name</h1>
+2:    <p>Find me in app/views/breweries/by_name.html.erb</p>
+3:    
+4:    <% breweries = Brewery.all %>
+5:    <%= puts breweries_array = breweries.each.map {|x| x.name } %>
+6:    <%= brewries_array.%>
+  
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:6: syntax error, unexpected ')'
+app/views/breweries/by_name.html.erb:8: syntax error, unexpected end, expecting ')'
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:48:39 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 464.5ms | Allocations: 147981)
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 0.2ms | Allocations: 149338)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `brewries_array' for #<#<Class:0x00007ff02ccbbdc0>:0x00007ff02ccc3a48>
+Did you mean?  breweries_array):
+    3: 
+    4: <% breweries = Brewery.all %>
+    5: <%= puts breweries_array = breweries.each.map {|x| x.name } %>
+    6: <%= brewries_array %>
+  
+app/views/breweries/by_name.html.erb:6
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:48:47 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.0ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 5918)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:48:54 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.1ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 5916)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:49:15 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 474.1ms | Allocations: 147404)
+Completed 500 Internal Server Error in 478ms (ActiveRecord: 0.0ms | Allocations: 148756)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `breweries_array' for #<#<Class:0x00007ff02c84ac50>:0x00007ff02c85b000>
+Did you mean?  breweries_url):
+    2: <p>Find me in app/views/breweries/by_name.html.erb</p>
+    3: 
+    4: <% breweries = Brewery.all %>
+    5: <%= breweries_array.to_s = breweries.each.map {|x| x.name } %>
+    6: <%= breweries_array %>
+  
+app/views/breweries/by_name.html.erb:5
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:51:23 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.0ms | Allocations: 724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms | Allocations: 5911)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:51:29 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.0ms | Allocations: 722)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 5909)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:53:03 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.1ms | Allocations: 723)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 5919)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:53:09 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.6ms | Allocations: 597)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 4852)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:53:23 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.5ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5906)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:53:28 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.8ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 5907)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:56:43 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2620)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 3967)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "[\"Austin Beer\", \"Round Rock Beer\"]":String):
+    3: 
+    4: <% breweries = Brewery.all %>
+    5: <% breweries_array = breweries.each.map {|x| x.name }.to_s %>
+    6: <%= breweries_array.each {|x| puts x} %>
+  
+app/views/breweries/by_name.html.erb:6
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:58:17 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.3ms | Allocations: 730)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.2ms | Allocations: 5920)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 09:58:30 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.6ms | Allocations: 739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 5924)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:03:41 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.8ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.2ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.8ms | Allocations: 5906)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:03:48 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.6ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 5910)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:03:52 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.7ms | Allocations: 728)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5913)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:04:42 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.7ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5915)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:05:11 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.3ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 5940)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 10:05:27 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.7ms | Allocations: 763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.1ms | Allocations: 5951)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:17:19 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.4ms | Allocations: 790)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.2ms | Allocations: 5979)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:17:48 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.7ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.1ms | Allocations: 5957)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:17:54 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 4.0ms | Allocations: 773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.2ms | Allocations: 5958)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:18:11 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1722)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3071)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"breweries"}, missing required keys: [:id]):
+     5: <% breweries_array = breweries.each.map {|x| x.name } %>
+     6: <ul>
+     7: <% breweries_array.each do |x| %>
+     8: <li><%= link_to p x, brewery_path %></li>
+     9: <% end %>
+    10: </ul>
+  
+app/views/breweries/by_name.html.erb:8
+app/views/breweries/by_name.html.erb:7:in `each'
+app/views/breweries/by_name.html.erb:7
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:18:42 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1065)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2420)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Breweries#by_name</h1>
+<p>Find me in app/views/breweries/by_name.html.erb</p>
+
+<% breweries = Brewery.all %>
+<% breweries_array = breweries.each.map {|x| x.name, x.id } %>
+<ul>
+<% breweries_array.each do |x| %>
+<li><%= link_to p x, brewery_path(%></li>
+<% end %>
+</ul>
+):
+1:    <h1>Breweries#by_name</h1>
+2:    <p>Find me in app/views/breweries/by_name.html.erb</p>
+3:    
+4:    <% breweries = Brewery.all %>
+5:    <% breweries_array = breweries.each.map {|x| x.name, x.id } %>
+6:    <ul>
+7:    <% breweries_array.each do |x| %>
+8:    <li><%= link_to p x, brewery_path(%></li>
+9:    <% end %>
+10:    </ul>
+  
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:5: syntax error, unexpected '}', expecting '.' or &. or :: or '['
+app/views/breweries/by_name.html.erb:9: syntax error, unexpected end, expecting ')'
+app/views/breweries/by_name.html.erb:12: syntax error, unexpected end, expecting ')'
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:20:37 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1084)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2439)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Breweries#by_name</h1>
+<p>Find me in app/views/breweries/by_name.html.erb</p>
+
+<% breweries = Brewery.all %>
+<% breweries_array = breweries.each.map do |brewery| %>
+<% brewery.name %>
+<% brewery.id %>
+<ul>
+<% breweries_array.each do |item| %>
+<li><%= link_to item.name, brewery_path(item.id) %></li>
+<% end %>
+</ul>
+):
+1:    <h1>Breweries#by_name</h1>
+2:    <p>Find me in app/views/breweries/by_name.html.erb</p>
+3:    
+4:    <% breweries = Brewery.all %>
+5:    <% breweries_array = breweries.each.map do |brewery| %>
+6:    <% brewery.name %>
+7:    <% brewery.id %>
+8:    <ul>
+9:    <% breweries_array.each do |item| %>
+10:    <li><%= link_to item.name, brewery_path(item.id) %></li>
+11:    <% end %>
+12:    </ul>
+  
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/breweries/by_name.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:21:03 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2388)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 3742)
+
+
+  
+ActionView::Template::Error (undefined method `name' for 1:Integer):
+     8: <% end %>
+     9: <ul>
+    10: <% breweries_array.each do |item| %>
+    11: <li><%= link_to item.name, brewery_path(item.id) %></li>
+    12: <% end %>
+    13: </ul>
+  
+app/views/breweries/by_name.html.erb:11
+app/views/breweries/by_name.html.erb:10:in `each'
+app/views/breweries/by_name.html.erb:10
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:21:25 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2388)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3742)
+
+
+  
+ActionView::Template::Error (undefined method `name' for 1:Integer):
+     8: <% end %>
+     9: <ul>
+    10: <% breweries_array.each do |item| %>
+    11: <li><%= p item.name, brewery_path(item.id) %></li>
+    12: <% end %>
+    13: </ul>
+  
+app/views/breweries/by_name.html.erb:11
+app/views/breweries/by_name.html.erb:10:in `each'
+app/views/breweries/by_name.html.erb:10
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:21:34 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2427)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3781)
+
+
+  
+ActionView::Template::Error (undefined method `id' for 1:Integer
+Did you mean?  i):
+     8: <% end %>
+     9: <ul>
+    10: <% breweries_array.each do |item| %>
+    11: <li><%= p item, brewery_path(item.id) %></li>
+    12: <% end %>
+    13: </ul>
+  
+app/views/breweries/by_name.html.erb:11
+app/views/breweries/by_name.html.erb:10:in `each'
+app/views/breweries/by_name.html.erb:10
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:22:12 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.3ms | Allocations: 772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms | Allocations: 5963)
+
+
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  [1m[36mBrewery Load (0.6ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" ORDER BY "breweries"."id" ASC LIMIT ?[0m  [["LIMIT", 1000]]
+  [1m[36mBrewery Load (1.5ms)[0m  [1m[34mSELECT DISTINCT "breweries"."name" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:28:46 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.6ms | Allocations: 829)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.3ms | Allocations: 6004)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:28:53 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.0ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 5990)
+
+
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT DISTINCT "breweries"."name" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "breweries"."name" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "breweries"."name" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT DISTINCT "breweries"."name" FROM "breweries"[0m
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:30:13 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.1ms | Allocations: 625)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 4884)
+
+
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:39:35 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:13
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1478)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.5ms | Allocations: 6654)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:39:55 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:13
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1490)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.3ms | Allocations: 6676)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-04 11:39:57 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:19:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (1.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 61.8ms | Allocations: 11609)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 67.3ms | ActiveRecord: 2.8ms | Allocations: 16526)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:40:31 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:6
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.0ms | Allocations: 823)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 6018)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-04 11:40:33 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:19:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 6659)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:40:52 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 2.4ms | Allocations: 823)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 6005)
+
+
+Started GET "/breweries/" for 127.0.0.1 at 2020-03-04 11:41:55 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 4716)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:41:56 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 1.8ms | Allocations: 666)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 4913)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:42:54 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 2.0ms | Allocations: 193)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 5400)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:43:17 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.0ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 5373)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:44:02 -0600
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 3.8ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 45.1ms | ActiveRecord: 0.0ms | Allocations: 11825)
+
+
+Started GET "/breweries/city" for 127.0.0.1 at 2020-03-04 11:44:23 -0600
+Processing by BreweriesController#by_city as HTML
+  Rendering breweries/by_city.html.erb within layouts/application
+  Rendered breweries/by_city.html.erb within layouts/application (Duration: 0.6ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4921)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:44:43 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.9ms | Allocations: 188)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 5380)
+
+
+Started GET "/breweries/name" for 127.0.0.1 at 2020-03-04 11:45:01 -0600
+Processing by BreweriesController#by_name as HTML
+  Rendering breweries/by_name.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/by_name.html.erb:5
+  Rendered breweries/by_name.html.erb within layouts/application (Duration: 56.2ms | Allocations: 9381)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 73.5ms | ActiveRecord: 1.3ms | Allocations: 14118)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:45:04 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 64)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 4322)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-04 11:45:07 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4308)
+
+

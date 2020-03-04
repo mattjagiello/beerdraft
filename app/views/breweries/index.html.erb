@@ -1,19 +1,8 @@
 <h1>Find a brewery</h1>
 
-By Name:
-<%= form_for @brewery do |f| %>
-<%= f.collection_select(:name, Brewery.all, :id, :name) %>
-<%= f.submit "Select Brewery" %>
-<% end %>
-<br><br>
-By City:
-<%= form_for @brewery do |f| %>
-<%= f.collection_select(:name, Brewery.all, :id, :city) %>
-<%= f.submit "Select Brewery" %>
-<% end %>
-<br><br>
-By ZIP Code:
-<%= form_for @brewery do |f| %>
-<%= f.collection_select(:name, Brewery.all, :id, :zip_code) %>
-<%= f.submit "Select Brewery" %>
-<% end %>
+Find brewery by:
+<%= button_to "Name", breweries_name_path, method: :get %>
+<br>
+<%= button_to "City", breweries_city_path, method: :get %>
+<br>
+<%= button_to "ZIP code", root_path, method: :get %>

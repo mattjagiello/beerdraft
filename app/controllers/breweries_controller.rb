@@ -4,6 +4,12 @@ class BreweriesController < ApplicationController
     @brewery = Brewery.new
   end
 
+  def by_name
+  end
+
+  def by_city
+  end
+
   def new
     @brewery = Brewery.new
   end
