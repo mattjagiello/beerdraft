@@ -4,11 +4,16 @@ body {
     background-repeat: no-repeat;
 }
 
+a {
+    color: white
+}
+
 .main{
     text-align: center;
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 32px;
+
 }
 
 .links{
