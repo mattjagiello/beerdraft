@@ -17,16 +17,13 @@ class Beer < ApplicationRecord
 
     def average_rating
         if self.reviews.size > 0
-            self.reviews.average(:rating)
+        self.reviews.average(:rating) 
         else
             'no rated yet'
         end
     end
 
-    def top_beers
-        
-    end
-
+      
 end
 
 
