@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     if @review.valid?
       @review.save
-      redirect_to reviews_path
+      redirect_to beer_path(@review)
     else
       render :new
     end
