@@ -1,2 +1,32 @@
-<h1>Beers#new</h1>
-<p>Find me in app/views/beers/new.html.erb</p>
+<h1>Add a beer!</h1>
+
+<%= form_for @beer do |f| %>
+    <%= f.label "Name:" %>
+    <%= f.text_field :name %>
+    <br/>
+    <br/>
+    <%= f.label "Brand:" %>
+    <%= f.text_field :brand %>
+    <br/>
+    <br/>
+    <%= f.label "Type:" %>
+    <%= f.text_field :style %>
+    <br/>
+    <br/>
+    <%= f.label "ABV:" %>
+    <%= f.text_field :abv %>
+    <br/>
+    <br/>
+    <%= f.label "Strenght:" %>
+    <%= f.text_field :strength %>
+    <br/>
+    <br/>
+    Select Brewery
+    <br>
+    <%= f.collection_check_boxes(:id, Brewery.all, :id, :name)%>
+
+    <br/>
+    <br/>
+    
+    <%= f.submit "Add your beer!" %>
+  <% end %>

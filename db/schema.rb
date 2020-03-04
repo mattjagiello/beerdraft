@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_03_152236) do
+ActiveRecord::Schema.define(version: 2020_03_04_212316) do
 
   create_table "beer_breweries", force: :cascade do |t|
     t.integer "beer_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_03_03_152236) do
     t.float "abv"
     t.string "strength"
     t.integer "likes", default: 0
+    t.integer "avg_rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
