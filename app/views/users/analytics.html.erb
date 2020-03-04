@@ -14,6 +14,16 @@ Total number of reviews: <%= @reviews = Review.all.count %><br>
 Total number of breweries: <%= Brewery.all.count %><br>
 Total number of beers: <%= Beer.all.count %><br>
 <br>
+Shortest review: <% reviews = Review.select(:content) %>
+<% content_strings = reviews.map {|x| x.content} %>
+<% @sorted_content = content_strings.sort_by {|x| x.length}%>
+<%= @sorted_content[0].length %> characters<br>
+Longest review: <%= @sorted_content[-1].length%> characters<br>
+Latest review: "<%= @sorted_content[-1] %>"<br>
+Latest review timestamp: <% reviews = Review.select(:created_at) %>
+<% review_times = reviews.map{|x| x.created_at} %>
+<%= review_times[-1] %>
+<br><br>
 Total tracked beers for all user reviews: <% reviews = Review.all %>
 <% @all_reviews = reviews.map {|x| x.tracked} %>
 <%= @total_tracked = @all_reviews.select{|x| x == true}.count %><br>
@@ -21,15 +31,6 @@ Tracked beers per user: <%= @total_tracked / @user_count %><br>
 Average rating for all beers: <% ratings = Review.all.select(:rating) %>
 <% sum = ratings.map {|x| x.rating }.sum.to_f %>
 <%= sum / ratings.count %>
-<br><br>
-Shortest Review: <% reviews = Review.select(:content) %>
-<% content_strings = reviews.map {|x| x.content} %>
-<% @sorted_content = content_strings.sort_by {|x| x.length}%>
-<%= @sorted_content[0].length %> characters<br>
-Longest Review: <%= @sorted_content[-1].length%> characters<br>
-Latest Review: "<%= @sorted_content[-1] %>"<br>
-<br>
-
 
 </div>
 
