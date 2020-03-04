@@ -1,11 +1,30 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
-
-<h1>Welcome to the page of <%= @user.username %></h2>
-
 <% if current_user == @user %>
-  <h3>This is my page!!!</h3>
+  <h3><%= @user.username.capitalize %>'s Beer Collection</h3>
 <% end %>
+
+Reviewed Beers:
+<% user_reviews = Review.where(user_id: @user) %>
+<ul>
+<% user_reviews.each do |review| %>
+<% beer = Beer.find_by(id: review.beer_id) %>
+<li><%= beer.name %></li>
+<% end %>
+</ul>
+
+Tracked Beers:
+<% user_reviews = Review.where(user_id: @user) %>
+<ul>
+<% tracked_reviews = user_reviews.select {|x| x.tracked == true} %>
+<% tracked_reviews.each do |review| %>
+<% beer = Beer.find_by(id: review.beer_id) %>
+<li><%= beer.name %></li>
+<% end %>
+</ul>
+
+<br>
+Write a new review:
+<%= button_to "New Review", new_review_path, method: :get %>
+<br>
 
 <% if logged_in? %>
     <%= button_to "Logout", sessions_path, method: :delete %>
