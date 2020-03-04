@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   get "/breweries/name", to: "breweries#by_name"
   get "/breweries/city", to: "breweries#by_city"
+  get "breweries/:id/city", to: "breweries#showcity"
   post "/sessions", to: "sessions#create"
   delete "/sessions", to: "sessions#destroy"
   resources :breweries, only: [:index, :new, :create, :show]

@@ -1,8 +1,8 @@
-<h1>Find a brewery</h1>
+<h1>Find a brewery by name</h1>
 
-Find brewery by:
-<%= button_to "Name", breweries_name_path, method: :get %>
-<br>
-<%= button_to "City", breweries_city_path, method: :get %>
-<br>
-<%= button_to "ZIP code", root_path, method: :get %>
+<% breweries = Brewery.select(:id, :name).distinct%>
+<ul>
+<% breweries.each do |x| %>
+<li><%= link_to x.name, brewery_path(x.id) %></li>
+<% end %>
+</ul>

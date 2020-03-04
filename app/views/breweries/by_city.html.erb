@@ -3,6 +3,6 @@
 <% breweries = Brewery.select(:id, :city, :name).distinct%>
 <ul>
 <% breweries.each do |x| %>
-<li><%= link_to x.city, brewery_path(x.id) %></li>
+<li><%= x.city %></li>
 <% end %>
 </ul>
