@@ -1,2 +1,6 @@
 <h1>Reviews#show</h1>
 <p>Find me in app/views/reviews/show.html.erb</p>
+
+<%= @review.content %>
+<br><br>
+<%= button_to "Delete Review", review_path, method: :delete %>
