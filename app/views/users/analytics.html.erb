@@ -5,12 +5,18 @@
     <title>Beerdraft</title>
 </head>
 <body>
-<div class = "analytics">
+<div class = "analytics-header">
 <h1>Analytics</h1>
-
-Total number of reviews:
-<%= %>
-
+</div>
+<div class = "analytics">
+Total number of users: <%= User.all.count %><br>
+Total number of reviews: <%= Review.all.count %><br>
+Total number of beers: <%= Beer.all.count %><br>
+Total number of breweries: <%= Brewery.all.count %><br>
+<br>
+Average rating for all beers: <% ratings = Review.all.select(:rating) %>
+<% sum = ratings.map {|x| x.rating }.sum %>
+<%= sum / ratings.count %>
 
 </div>
 </body>
