@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "users#main"
-  get '/login', to: 'sessions#new'
-  post '/login', to: 'sessions#create'
+  get "/signup", to: "users#new"
+  get "/login", to: "sessions#new"
+  post "/sessions", to: "sessions#create"
+  delete "/sessions", to: "sessions#destroy"
   resources :breweries, only: [:index, :new, :create, :show]
   resources :beers, only: [:index, :new, :create, :show, :delete]
   resources :reviews, only: [:new, :create, :index, :show, :delete]

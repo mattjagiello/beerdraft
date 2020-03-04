@@ -1,2 +1,19 @@
-<h1>Breweries#index</h1>
-<p>Find me in app/views/breweries/index.html.erb</p>
+<h1>Find a brewery</h1>
+
+By Name:
+<%= form_for @brewery do |f| %>
+<%= f.collection_select(:name, Brewery.all, :id, :name) %>
+<%= f.submit "Select Brewery" %>
+<% end %>
+<br><br>
+By City:
+<%= form_for @brewery do |f| %>
+<%= f.collection_select(:name, Brewery.all, :id, :city) %>
+<%= f.submit "Select Brewery" %>
+<% end %>
+<br><br>
+By ZIP Code:
+<%= form_for @brewery do |f| %>
+<%= f.collection_select(:name, Brewery.all, :id, :zip_code) %>
+<%= f.submit "Select Brewery" %>
+<% end %>

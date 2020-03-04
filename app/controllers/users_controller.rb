@@ -1,13 +1,12 @@
 class UsersController < ApplicationController
-  skip_before_action :verify_authenticity_token
-  protect_from_forgery prepend: true, with: :exception
+  before_action :authorized, only: [:show]
 
   def main
   end
 
-  def login
-    @users = User.find(params[:id])
-  end
+  # def login
+  #   @users = User.find(params[:id])
+  # end
 
   def new
     @user = User.new
@@ -24,12 +23,13 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username)
+    params.require(:user).permit(:username, :password, :password_confirmation)
   end
 
 end

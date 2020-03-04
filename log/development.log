@@ -5637,3 +5637,863 @@ Processing by BreweriesController#show as HTML
 Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 7482)
 
 
+Started GET "/breweries/new" for 127.0.0.1 at 2020-03-03 16:58:19 -0600
+Processing by BreweriesController#new as HTML
+  Rendering breweries/new.html.erb within layouts/application
+  Rendered breweries/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5041)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:05:06 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 452.4ms | Allocations: 147313)
+Completed 500 Internal Server Error in 460ms (ActiveRecord: 0.0ms | Allocations: 148662)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fdf6ea8f4d0>:0x00007fdf6ea8dae0>):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+  
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:05:24 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1033)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2385)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Find a brewery</h1>
+
+<%= form_for @brewery do |f| s%>
+<%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+
+
+):
+1:    <h1>Find a brewery</h1>
+2:    
+3:    <%= form_for @brewery do |f| s%>
+4:    <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+  
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:8: syntax error, unexpected end, expecting ')'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:05:33 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1036)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2388)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Find a brewery</h1>
+
+<%= form_for @brewery do |f| s%>
+<%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+<% end %>
+):
+1:    <h1>Find a brewery</h1>
+2:    
+3:    <%= form_for @brewery do |f| s%>
+4:    <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+5:    <% end %>
+  
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:05:43 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1014)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2366)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= form_for @brewery do |f| %>
+    4: <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+    5: <% end %>
+  
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:06:31 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.8ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered breweries/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 8533)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.6ms | Allocations: 11246)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Brewery::ActiveRecord_Relation:0x00007fdf6cd573b8>
+Did you mean?  to_set
+               to_ary):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= form_for @breweries do |f| %>
+    4: <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+    5: <% end %>
+  
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:09:33 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 3003)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.4ms | Allocations: 10125)
+
+
+  
+ActionView::Template::Error (undefined method `desired_attribute' for #<Brewery:0x00007fdf72955728>):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= form_for @brewery do |f| %>
+    4: <%= f.select :desired_attribute, ['Name', 'City', 'Zip Code']%>
+    5: <% end %>
+  
+app/views/breweries/index.html.erb:4
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:09:45 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 412)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 5616)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:23:12 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1029)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2400)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Find a brewery</h1>
+
+<%= form_for @brewery do |f| %>
+<%= f.collection_select(:names, Brewery.all, :id, :name %>
+<% end %>
+):
+1:    <h1>Find a brewery</h1>
+2:    
+3:    <%= form_for @brewery do |f| %>
+4:    <%= f.collection_select(:names, Brewery.all, :id, :name %>
+5:    <% end %>
+  
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/breweries/index.html.erb:7: syntax error, unexpected end, expecting ')'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:23:19 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2844)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4219)
+
+
+  
+ActionView::Template::Error (undefined method `names' for #<Brewery:0x00007fdf70723448>
+Did you mean?  name
+               name=
+               name?):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= form_for @brewery do |f| %>
+    4: <%= f.collection_select(:names, Brewery.all, :id, :name) %>
+    5: <% end %>
+  
+app/views/breweries/index.html.erb:4
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:23:25 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (1.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  Rendered breweries/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 1.1ms | Allocations: 6280)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:23:42 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  Rendered breweries/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 6431)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:23:52 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1089)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 6287)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:25:05 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2818)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4178)
+
+
+  
+ActionView::Template::Error (undefined method `brewery_id' for #<Brewery:0x00007fdf707cc688>):
+    2: 
+    3: By name:
+    4: <%= form_for @brewery do |f| %>
+    5: <%= f.collection_select(:brewery_id, Brewery.all, :id, :name) %>
+    6: <%= f.submit "Select Brewery" %>
+    7: <% end %>
+    8: <br><br>
+  
+app/views/breweries/index.html.erb:5
+app/views/breweries/index.html.erb:4
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:25:18 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  Rendered breweries/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2874)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 4239)
+
+
+  
+ActionView::Template::Error (undefined method `brewery_ids' for #<Brewery:0x00007fdf6d8c0f60>
+Did you mean?  beer_ids):
+    1: <h1>Find a brewery</h1>
+    2: 
+    3: <%= form_for @brewery do |f| %>
+    4: <%= f.collection_select(:brewery_ids, Brewery.all, :id, :name) %>
+    5: <%= f.submit "Select Brewery" %>
+    6: <% end %>
+    7: <br><br>
+  
+app/views/breweries/index.html.erb:4
+app/views/breweries/index.html.erb:3
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:25:28 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:9
+  Rendered breweries/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 7206)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:25:36 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:9
+  Rendered breweries/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2008)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 7208)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:25:58 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:4
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:9
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:14
+  Rendered breweries/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 8132)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:26:26 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:11
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:17
+  Rendered breweries/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2939)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.2ms | Allocations: 8139)
+
+
+Started POST "/breweries" for 127.0.0.1 at 2020-03-03 17:26:40 -0600
+Processing by BreweriesController#create as HTML
+  Parameters: {"authenticity_token"=>"kdRpD4UaYM/xoDUDpE97EpHaLmcRCym1Nd5jQ44q4LnTgHK14+itObqaCK05NIsaSlF9UATiX0dMwHHSCdOKCg==", "brewery"=>{"name"=>"1"}, "commit"=>"Select Brewery"}
+  Rendering breweries/create.html.erb within layouts/application
+  Rendered breweries/create.html.erb within layouts/application (Duration: 1.1ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4537)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:30:59 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.0ms | Allocations: 6549)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"breweries", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/breweries_controller.rb:5:in `index'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:31:02 -0600
+Processing by BreweriesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 841)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"breweries", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/breweries_controller.rb:5:in `index'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:31:14 -0600
+Processing by BreweriesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 841)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"breweries", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/breweries_controller.rb:5:in `index'
+Started GET "/breweries/index" for 127.0.0.1 at 2020-03-03 17:31:20 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:16:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1386)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brewery with 'id'=index):
+  
+app/controllers/breweries_controller.rb:16:in `show'
+Started GET "/breweries/index" for 127.0.0.1 at 2020-03-03 17:31:33 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:16:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.9ms | Allocations: 3314)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brewery with 'id'=index):
+  
+app/controllers/breweries_controller.rb:16:in `show'
+Started GET "/breweries" for 127.0.0.1 at 2020-03-03 17:31:35 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:11
+  [1m[36mCACHE Brewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:17
+  Rendered breweries/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2723)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 10924)
+
+
+Started POST "/breweries" for 127.0.0.1 at 2020-03-03 17:31:52 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#create as HTML
+  Parameters: {"authenticity_token"=>"nH1B1x9TB0z3wK/zdgqRWQFgRggHbqlGtjP2VP4jlHbeKVpteaHKurz6kl3rcWFR2usVPxKH37TPLeTFedr+xQ==", "brewery"=>{"name"=>"2"}, "commit"=>"Select Brewery"}
+  Rendering breweries/create.html.erb within layouts/application
+  Rendered breweries/create.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4516)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:41:10 -0600
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 3.3ms | Allocations: 852)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 85.3ms | ActiveRecord: 0.0ms | Allocations: 16156)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200303151732)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200303151732"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20200303151924)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "rating" integer DEFAULT 0, "tracked" boolean DEFAULT 0, "user_id" integer, "beer_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200303151924"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBeers (20200303152130)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "beers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "brand" varchar, "style" varchar, "abv" float, "strength" varchar, "likes" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200303152130"]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBreweries (20200303152212)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "breweries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "zip_code" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200303152212"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBeerBreweries (20200303152236)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "beer_breweries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "beer_id" integer, "brewery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200303152236"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-04 04:41:59.415147"], ["updated_at", "2020-03-04 04:41:59.415147"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jelena"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (1.4ms)[0m  [1m[32mINSERT INTO "beers" ("name", "brand", "style", "abv", "strength", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beer 1"], ["brand", "Good Beer"], ["style", "IPA"], ["abv", 5.5], ["strength", "Medium"], ["created_at", "2020-03-04 04:42:08.988288"], ["updated_at", "2020-03-04 04:42:08.988288"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.4ms)[0m  [1m[32mINSERT INTO "beers" ("name", "brand", "style", "abv", "strength", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beer 1"], ["brand", "Bad Beer"], ["style", "Ale"], ["abv", 6.5], ["strength", "Strong"], ["created_at", "2020-03-04 04:42:08.995545"], ["updated_at", "2020-03-04 04:42:08.995545"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBrewery Create (0.4ms)[0m  [1m[32mINSERT INTO "breweries" ("name", "address", "city", "zip_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Austin Beer"], ["address", "111 Beer Street"], ["city", "Austin"], ["zip_code", 12345], ["created_at", "2020-03-04 04:42:09.029167"], ["updated_at", "2020-03-04 04:42:09.029167"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBrewery Create (0.5ms)[0m  [1m[32mINSERT INTO "breweries" ("name", "address", "city", "zip_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Round Rock Beer"], ["address", "222 Round Rock Street"], ["city", "Round Rock"], ["zip_code", 54321], ["created_at", "2020-03-04 04:42:09.034115"], ["updated_at", "2020-03-04 04:42:09.034115"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:43:12 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.6ms | Allocations: 195)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 5396)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:43:20 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.7ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 5387)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:43:21 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 3220)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 26.2ms | ActiveRecord: 2.0ms | Allocations: 13038)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:43:37 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 6302)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:43:54 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6300)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:44:01 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 6327)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:45:50 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 5694)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:46:04 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 502)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 5689)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:48:14 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/mjagi/Development/code/beerdraft/app/controllers/application_controller.rb:19: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:19: syntax error, unexpected end, expecting end-of-input
+app/controllers/application_controller.rb:19: syntax error, unexpected end, expecting end-of-input
+app/controllers/application_controller.rb:19: syntax error, unexpected end, expecting end-of-input
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:49:41 -0600
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:52:33 -0600
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 2.2ms | Allocations: 16561)
+
+
+  
+ActionView::Template::Error (Couldn't find User with 'id'=4):
+    14: 
+    15:     <br>
+    16: 
+    17:     <% if logged_in? %>
+    18:       <%= button_to "Logout", sessions_path, method: :delete %>
+    19:     <% else %>
+    20:       <%= button_to "Login Page", login_path, method: :get %>
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/views/layouts/application.html.erb:17
+Started GET "/login" for 127.0.0.1 at 2020-03-03 22:53:41 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 506)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5716)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:53:46 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.6ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 5046)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:53:52 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.0ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 6681)
+
+
+  
+ActionView::Template::Error (Couldn't find User with 'id'=4):
+    14: 
+    15:     <br>
+    16: 
+    17:     <% if logged_in? %>
+    18:       <%= button_to "Logout", sessions_path, method: :delete %>
+    19:     <% else %>
+    20:       <%= button_to "Login Page", login_path, method: :get %>
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/views/layouts/application.html.erb:17
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:54:43 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 26.5ms | Allocations: 4961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.2ms | Allocations: 13368)
+
+
+  
+ActionView::Template::Error (Couldn't find User with 'id'=4):
+    14: 
+    15:     <br>
+    16: 
+    17:     <% if logged_in? %>
+    18:       <%= button_to "Logout", sessions_path, method: :delete %>
+    19:     <% else %>
+    20:       <%= button_to "Login Page", login_path, method: :get %>
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/views/layouts/application.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:55:29 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.6ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.1ms | Allocations: 6693)
+
+
+  
+ActionView::Template::Error (Couldn't find User with 'id'=4):
+    14: 
+    15:     <br>
+    16: 
+    17:     <% if logged_in? %>
+    18:       <%= button_to "Logout", sessions_path, method: :delete %>
+    19:     <% else %>
+    20:       <%= button_to "Login Page", login_path, method: :get %>
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/views/layouts/application.html.erb:17
+Started GET "/login'" for 127.0.0.1 at 2020-03-03 22:55:39 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/login'"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:55:43 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.9ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5381)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-03-03 22:56:51 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 6301)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-03-03 22:56:56 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"GdzJmQ3Exbs4v9dagYMOoxJ7GsH244RX7kCFAxqUQBmMPgxM8YQRXKJ6SxbMKYnhK+K3D+YtO2eWV/fEU0GMbg==", "user"=>{"username"=>"matt", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "matt"], ["password_digest", "$2a$10$YNMPpkLJt/7pEHy5i8i3VOL/5SqDKiMAbGkJ78zvK.phNFOv4gsde"], ["created_at", "2020-03-04 04:56:56.377232"], ["updated_at", "2020-03-04 04:56:56.377232"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/users/1
+Completed 302 Found in 88ms (ActiveRecord: 2.9ms | Allocations: 4878)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-03 22:56:56 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1259)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/controllers/application_controller.rb:15:in `authorized'
+Started POST "/users" for 127.0.0.1 at 2020-03-03 22:58:44 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"GdzJmQ3Exbs4v9dagYMOoxJ7GsH244RX7kCFAxqUQBmMPgxM8YQRXKJ6SxbMKYnhK+K3D+YtO2eWV/fEU0GMbg==", "user"=>{"username"=>"matt", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 1.1ms | Allocations: 57036)
+
+
+  
+NoMethodError (undefined method `redirect' for #<UsersController:0x00007fab6b84d028>
+Did you mean?  redirect_to):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-03-03 22:59:09 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"GdzJmQ3Exbs4v9dagYMOoxJ7GsH244RX7kCFAxqUQBmMPgxM8YQRXKJ6SxbMKYnhK+K3D+YtO2eWV/fEU0GMbg==", "user"=>{"username"=>"matt", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 1.3ms | Allocations: 104574)
+
+
+  
+NoMethodError (undefined method `new_url' for #<UsersController:0x00007fab66d41930>
+Did you mean?  new_user_url):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-03-03 22:59:53 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"GdzJmQ3Exbs4v9dagYMOoxJ7GsH244RX7kCFAxqUQBmMPgxM8YQRXKJ6SxbMKYnhK+K3D+YtO2eWV/fEU0GMbg==", "user"=>{"username"=>"matt", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 946)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 157ms (Views: 26.6ms | ActiveRecord: 1.2ms | Allocations: 11677)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-03 22:59:59 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 1.2ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4589)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-03 23:00:01 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 501)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 5360)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-03-03 23:00:04 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"umURFG6w7zEZ2Cj3KAHTeOU/9NY8nGStm0/NBRfSMxzsFZ5vWElyXdd4AXzkAput5sI4h3yMWLbzX2ckfSWxYw==", "username"=>"matt", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "matt"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/users/1
+Completed 302 Found in 83ms (ActiveRecord: 0.3ms | Allocations: 1233)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-03 23:00:04 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 6128)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-03 23:01:36 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 13.1ms | ActiveRecord: 1.0ms | Allocations: 12454)
+
+
+Started DELETE "/sessions" for 127.0.0.1 at 2020-03-03 23:16:54 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L1CmsaxY8fg8DFzQlHBN65ya50VgfJ/Sztn6QXXIVFi33elZ27xsG7Qo0ivTdQqftJZn+RWzmjqsxfUBMN1KZA=="}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 568)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-03-03 23:16:54 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 500)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 5319)
+
+

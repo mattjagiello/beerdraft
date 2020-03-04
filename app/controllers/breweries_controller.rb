@@ -1,6 +1,7 @@
 class BreweriesController < ApplicationController
 
   def index
+    @brewery = Brewery.new
   end
 
   def new
