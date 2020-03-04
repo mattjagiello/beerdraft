@@ -5,6 +5,6 @@
 
 Beers Sold:<% brewery = Brewery.find_by(id: @brewery) %>
 <ul><% brewery.beers.each do |beer| %>
-<li><%= beer.name %></li>
+<li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
