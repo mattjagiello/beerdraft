@@ -3,11 +3,12 @@
 <% end %>
 
 Reviewed Beers:
-<% user_reviews = Review.where(user_id: @user) %>
+<% user_reviews = Review.where(user_id: @user)%>
+<% beer_ids = user_reviews.select(:beer_id).distinct %>
 <ul>
-<% user_reviews.each do |review| %>
-<% beer = Beer.find_by(id: review.beer_id) %>
-<li><%= beer.name %></li>
+<% beer_ids.each do |beer| %>
+<% beer = Beer.find_by(id: beer.beer_id) %>
+<li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
 
@@ -17,7 +18,7 @@ Tracked Beers:
 <% tracked_reviews = user_reviews.select {|x| x.tracked == true} %>
 <% tracked_reviews.each do |review| %>
 <% beer = Beer.find_by(id: review.beer_id) %>
-<li><%= beer.name %></li>
+<li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
 
