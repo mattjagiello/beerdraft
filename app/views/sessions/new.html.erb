@@ -1,5 +1,13 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app/assets/stylesheets/login.css">
+    <title>Beerdraft</title>
+</head>
+<body>
+
+<div class="main">
+<h1>Login to <b>Beerdraft<b></h1>
 
 <%= form_tag sessions_path do %>
     <%= label_tag "Username" %>
@@ -7,6 +15,7 @@
     <br>
     <%= label_tag "Password" %>
     <%= password_field_tag :password, nil, placeholder: "Password" %>
-    <br><br>
+    <br>
     <%= submit_tag "Log In"%>
+</div>
 <% end %>
