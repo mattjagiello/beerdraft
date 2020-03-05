@@ -22,10 +22,19 @@ Tracked Beers:
 <% end %>
 </ul>
 
+
 <br>
 Write a new review:
 <%= button_to "New Review", new_review_path, method: :get %>
 <br>
+<br>
+
+Check out all the beers:
+<%= link_to "Beers", beers_path %> <br><br>
+
+Check out all the breweries:
+<%= link_to "Breweries", brewery_path %> <br><br>
+
 
 <% if logged_in? %>
     <%= button_to "Logout", root_path, method: :get %>

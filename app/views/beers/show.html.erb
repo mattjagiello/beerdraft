@@ -4,7 +4,7 @@
 
    Brand:  <%= @beer.brand %> <br>
    Type:  <%= @beer.style %> <br>
-   ABV: <%= @beer.abv %> <br>
+   ABV:   <%= @beer.abv %> <br>
    Strenght: <%= @beer.strength %> <br>
  <br>
 
@@ -26,3 +26,7 @@
     Rating:  <%= r.rating %> <br>
     Date: <%= r.created_at %><br>
  <%end%>
+ <br><br>
+ Back to Beer list:
+ <%= link_to "Beers", beers_path %> 
+

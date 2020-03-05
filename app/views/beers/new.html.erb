@@ -14,11 +14,12 @@
     <br/>
     <br/>
     <%= f.label "ABV:" %>
-    <%= f.text_field :abv %>
+    <%= f.number_field :abv, in: 1.0..5.0, step: 1.0 %>
     <br/>
     <br/>
     <%= f.label "Strenght:" %>
-    <%= f.text_field :strength %>
+    <%= f.text_field  :strength %>
+    
     <br/>
     <br/>
     Select Brewery
