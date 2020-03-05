@@ -1,2 +1,18 @@
-<h1>Beers#index</h1>
-<p>Find me in app/views/beers/index.html.erb</p>
+
+<h1>All the beers</h1>
+
+<% @beers.each do |b| %>
+   <%= link_to b.name, beer_path(b) %> by <%= link_to b.brand, breweries_path(b) %> <br><br>
+    <%end%>
+
+
+
+<h2> Top Ten Rated Beers </h2>
+   <% Beer.top_beers.each do |b| %>
+    <ul>
+        <li>
+            <%= b.name %> rated <%= b.average_rating.round %><br>
+           
+        </li>
+    </ul>
+   <% end %>

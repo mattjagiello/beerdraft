@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/analytics", to: "users#analytics"
   post "/sessions", to: "sessions#create"
   delete "/sessions", to: "sessions#destroy"
+  post '/beers/:id/like', to: 'beers#like_beer'
   resources :breweries, only: [:index, :new, :create, :show]
   resources :beers, only: [:index, :new, :create, :show, :delete]
   resources :reviews
