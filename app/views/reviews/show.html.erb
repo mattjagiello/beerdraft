@@ -2,9 +2,11 @@
 <p>Find me in app/views/reviews/show.html.erb</p>
 
 <%= @review.content %>
+<br>
+<%= link_to "Back to Beer", beer_path(@review[:beer_id])%>
 <br><br>
 <%= button_to "Edit Review", edit_review_path, method: :get %>
 <br>
 <%= button_to "Delete Review", review_path, method: :delete %>
 <br><br>
-<%= button_to "Back to Beers", beers_path, method: :get %>
+<%= button_to "Back to Beers Index", beers_path, method: :get %>
