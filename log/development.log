@@ -22602,3 +22602,1861 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-05 10:04:06 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.2ms | Allocations: 64)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4394)
+
+
+Started GET "/app/assets/stylesheets/main.css" for 127.0.0.1 at 2020-03-05 10:04:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/signup" for 127.0.0.1 at 2020-03-05 10:04:08 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5153)
+
+
+Started GET "/app/assets/stylesheets/signup.css" for 127.0.0.1 at 2020-03-05 10:04:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/signup.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2020-03-05 10:04:16 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"fFk+8wJmR5T3WAiu/9zE6k7diBCw7e4eHMDdRkP5B1DeWxrl48DQJ1aNfPJyu/m/Bx6D4zIrWT2dRJgOG1ihRA==", "user"=>{"username"=>"beerman", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "beerman"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "beerman"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "beerman"], ["password_digest", "$2a$10$CeEcftq1dJQNOOPlpve8Iujy3yg8u992eZAmJEUFfU0585ZxLtT3."], ["created_at", "2020-03-05 16:04:16.208525"], ["updated_at", "2020-03-05 16:04:16.208525"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/users/3
+Completed 302 Found in 101ms (ActiveRecord: 4.6ms | Allocations: 4619)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2020-03-05 10:04:16 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2822)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 1.4ms | Allocations: 8408)
+
+
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-05 10:04:26 -0600
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2751)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.5ms | Allocations: 7228)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-05 10:04:41 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"CgbnuhUw4KMq37ScTfmuBxCcjUNt4YJuioPdq7lBiyxHSc/E12bmroFZT9IRKLGoWjr7DQmqvfQ4DndxCnEM6w==", "review"=>{"content"=>"First beer review", "beer_id"=>"3", "user_id"=>"3", "rating"=>"4", "tracked"=>"true"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "tracked", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "First beer review"], ["rating", 4], ["tracked", 1], ["user_id", 3], ["beer_id", 3], ["created_at", "2020-03-05 16:04:41.093503"], ["updated_at", "2020-03-05 16:04:41.093503"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/beers
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms | Allocations: 5048)
+
+
+Started GET "/beers" for 127.0.0.1 at 2020-03-05 10:04:41 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.4ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 14607)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 2.6ms | Allocations: 19574)
+
+
+Started GET "/breweries.1" for 127.0.0.1 at 2020-03-05 10:05:08 -0600
+Processing by BreweriesController#index as 
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 5376)
+
+
+Started GET "/breweries.1" for 127.0.0.1 at 2020-03-05 10:05:27 -0600
+Processing by BreweriesController#index as 
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5015)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2020-03-05 10:05:37 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3473)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 8313)
+
+
+Started POST "/beers/1/like" for 127.0.0.1 at 2020-03-05 10:05:40 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"evN/CQE330R5POjC2gUTimmaMX14oKdlz2E5CxGLNWd0TI2XkT+SWd6vIp7IMe134VoSS2t+7St4WqCWrNPY6Q==", "id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/1
+Completed 302 Found in 14ms (ActiveRecord: 0.8ms | Allocations: 4219)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2020-03-05 10:05:40 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 22.5ms | Allocations: 3461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 31.3ms | ActiveRecord: 0.9ms | Allocations: 8300)
+
+
+Started POST "/beers/1/like" for 127.0.0.1 at 2020-03-05 10:05:43 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"CAZ6szrzAfFEe/Fd+1ScEhbuwEVLV73/l9QThc8yr85FSVLN+KUH/O/9ChOnhYO9XEi2Cy8cgmUlWblffAIoCQ==", "id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 3915)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2020-03-05 10:05:43 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 1.0ms | Allocations: 8301)
+
+
+Started POST "/beers/1/like" for 127.0.0.1 at 2020-03-05 10:05:44 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"7E5bakOwRQLb8B1l2huTAAqN6vEeJQlWqam0FNjO7ZShAXMUgeZDD3B25iuGyoyvQCucv3puNswbJB7Oa/5qUw==", "id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 3918)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2020-03-05 10:05:44 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 8296)
+
+
+Started POST "/beers/1/like" for 127.0.0.1 at 2020-03-05 10:05:47 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"hMGKFUYKlXoSOOUOQW3Z2VGJ5NfyTPB+gnSk+GclSNDJjqJrhFyTd7m+HkAdvMZ2Gy+SmZYHz+Qw+Q4i1BXPFw==", "id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/1
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 3918)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2020-03-05 10:05:47 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.7ms | Allocations: 8294)
+
+
+Started GET "/beers/" for 127.0.0.1 at 2020-03-05 10:06:15 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 24.2ms | Allocations: 14602)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 2.0ms | Allocations: 19572)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2020-03-05 10:06:21 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3454)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.8ms | Allocations: 8793)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-05 10:07:03 -0600
+Processing by UsersController#main as HTML
+  Rendering users/main.html.erb within layouts/application
+  Rendered users/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 4390)
+
+
+Started GET "/app/assets/stylesheets/main.css" for 127.0.0.1 at 2020-03-05 10:07:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/signup" for 127.0.0.1 at 2020-03-05 10:07:06 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 5147)
+
+
+Started GET "/app/assets/stylesheets/signup.css" for 127.0.0.1 at 2020-03-05 10:07:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/signup.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/app/assets/stylesheets/main.css" for 127.0.0.1 at 2020-03-05 10:07:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2020-03-05 10:07:09 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5417)
+
+
+Started GET "/app/assets/stylesheets/login.css" for 127.0.0.1 at 2020-03-05 10:07:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/login.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/sessions" for 127.0.0.1 at 2020-03-05 10:07:11 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"c2NrIvLGQRBJCyxjELhMz4z+3j3WpUPD1fCWf1euiv92SKw/ZtnX+8WlylVL91zv/D0BPPDNI6XeJr5Avd+ZuQ==", "username"=>"beerman", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "beerman"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/users/3
+Completed 302 Found in 76ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2020-03-05 10:07:11 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3459)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.6ms | Allocations: 8803)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2020-03-05 10:07:36 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.7ms | Allocations: 8401)
+
+
+Started POST "/beers/3/like" for 127.0.0.1 at 2020-03-05 10:08:17 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"Q/oyQnQJFUudjpuZAylExgog/smX9DHa9crtZ3nB4zeYvGz+LqWGkNSGgAOwdQeE7nZgnOxZjEvyQ+kwIE8ICQ==", "id"=>"3"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/3
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms | Allocations: 3932)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2020-03-05 10:08:17 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3551)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 8395)
+
+
+Started POST "/beers/3/like" for 127.0.0.1 at 2020-03-05 10:08:17 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"lt0XGjEGlIJhtphS8j6qp94Woa33cm1rWAowdDGZviTbkj9k81CSj8owYxyu77UIlLDX45M5UvHqh5qugqk54w==", "id"=>"3"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/3
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 3921)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2020-03-05 10:08:17 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3551)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.7ms | Allocations: 8391)
+
+
+Started POST "/beers/3/like" for 127.0.0.1 at 2020-03-05 10:08:33 -0600
+Processing by BeersController#like_beer as HTML
+  Parameters: {"authenticity_token"=>"iju/NjwVWJOEwoFTRWm0bMayD6e6tddGC/e8/ceFfJbHdJdI/kNeni9Eeh0ZuKvDjBR56d7+6Ny5ehYndLX7UQ==", "id"=>"3"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:32:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[36mBeer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? AND "beers"."id" != ? LIMIT ?[0m  [["brand", "Good Beer"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/beers_controller.rb:34:in `like_beer'
+Redirected to http://127.0.0.1:3000/beers/3
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms | Allocations: 3917)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2020-03-05 10:08:33 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3551)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.9ms | Allocations: 8389)
+
+
+Started GET "/beers/" for 127.0.0.1 at 2020-03-05 10:08:50 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 14602)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 2.0ms | Allocations: 19571)
+
+
+Started GET "/beers/new" for 127.0.0.1 at 2020-03-05 10:09:44 -0600
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/beers/new.html.erb:26
+  Rendered beers/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 6431)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2020-03-05 10:09:54 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 56.9ms | Allocations: 3450)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 75.2ms | ActiveRecord: 1.3ms | Allocations: 8786)
+
+
+Started GET "/beers/" for 127.0.0.1 at 2020-03-05 10:10:05 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 37.3ms | Allocations: 14599)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 2.8ms | Allocations: 19570)
+
+
+Started GET "/beers/new" for 127.0.0.1 at 2020-03-05 10:10:16 -0600
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  ↳ app/views/beers/new.html.erb:26
+  Rendered beers/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 6430)
+
+
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-05 10:10:48 -0600
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 6458)
+
+
+Started POST "/beers" for 127.0.0.1 at 2020-03-05 10:12:20 -0600
+Processing by BeersController#create as HTML
+  Parameters: {"authenticity_token"=>"BY7Yq5Y2AMl95wN1u2Jyo/GNAUO784vwz5naByE5WVxIwfDVVGAGxNZh+Dvns20Muyt3Dd+4tGp9FHDdkgnemw==", "beer"=>{"name"=>"Test Beer", "brand"=>"ABC Beer", "style"=>"Lager", "abv"=>"4.5", "strength"=>"Light", "id"=>["", "1"]}, "commit"=>"Add your beer!"}
+[31mUnpermitted parameter: :id[0m
+  [1m[36mBeer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? LIMIT ?[0m  [["brand", "ABC Beer"], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:15:in `create'
+  [1m[36mCACHE Beer Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "beers" WHERE "beers"."brand" = ? LIMIT ?[0m  [["brand", "ABC Beer"], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:16:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/beers_controller.rb:16:in `create'
+  [1m[36mBeer Create (0.6ms)[0m  [1m[32mINSERT INTO "beers" ("name", "brand", "style", "abv", "strength", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test Beer"], ["brand", "ABC Beer"], ["style", "Lager"], ["abv", 4.5], ["strength", "Light"], ["created_at", "2020-03-05 16:12:20.444434"], ["updated_at", "2020-03-05 16:12:20.444434"]]
+  ↳ app/controllers/beers_controller.rb:16:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/beers_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/beers/6
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms | Allocations: 4390)
+
+
+Started GET "/beers/6" for 127.0.0.1 at 2020-03-05 10:12:20 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  Rendered beers/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 936)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 5778)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2020-03-05 10:12:30 -0600
+Processing by ReviewsController#index as HTML
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 7079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.9ms | Allocations: 11415)
+
+
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-05 10:12:46 -0600
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 6482)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-05 10:13:01 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"Imtet4yyyvO7xHyVvkzboQPIuG5bYeXxX3b6wdRRrgFvJHbJTuTM/hBCh9vincQOSW7OID8q2mvt+1AbZ2Epxg==", "review"=>{"content"=>"Review aoiwenmowainf", "beer_id"=>"6", "user_id"=>"3", "rating"=>"3", "tracked"=>"true"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "tracked", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "Review aoiwenmowainf"], ["rating", 3], ["tracked", 1], ["user_id", 3], ["beer_id", 6], ["created_at", "2020-03-05 16:13:01.600706"], ["updated_at", "2020-03-05 16:13:01.600706"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/beers
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms | Allocations: 4159)
+
+
+Started GET "/beers" for 127.0.0.1 at 2020-03-05 10:13:01 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 17303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 2.7ms | Allocations: 22275)
+
+
+Started GET "/reviews/1" for 127.0.0.1 at 2020-03-05 10:13:44 -0600
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 174)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5001)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2020-03-05 10:13:54 -0600
+Processing by ReviewsController#index as HTML
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 7655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.2ms | Allocations: 11995)
+
+
+Started GET "/beers/5" for 127.0.0.1 at 2020-03-05 10:14:01 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBeer Load (0.5ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 25.9ms | Allocations: 3505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 1.1ms | Allocations: 8346)
+
+
+Started GET "/reviews/4" for 127.0.0.1 at 2020-03-05 10:14:44 -0600
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1066)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Review with 'id'=4):
+  
+app/controllers/reviews_controller.rb:22:in `show'
+Started GET "/reviews/5" for 127.0.0.1 at 2020-03-05 10:14:47 -0600
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 5009)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-05 10:17:36 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 12.7ms | Allocations: 6223)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 1.3ms | Allocations: 11553)
+
+
+Started GET "/beers/2" for 127.0.0.1 at 2020-03-05 10:17:43 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3463)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.6ms | Allocations: 8305)
+
+
+Started GET "/beers/" for 127.0.0.1 at 2020-03-05 10:17:46 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 32.4ms | Allocations: 17302)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 2.4ms | Allocations: 22271)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2020-03-05 10:18:02 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "reviews"."beer_id" FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:18
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 7250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 1.3ms | Allocations: 12585)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:18:25 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 669)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 5125)
+
+
+Started GET "/beers" for 127.0.0.1 at 2020-03-05 10:19:08 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 31.6ms | Allocations: 17304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 2.7ms | Allocations: 22272)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:19:50 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5010)
+
+
+Started GET "/breweries/1" for 127.0.0.1 at 2020-03-05 10:19:52 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:21:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 6485)
+
+
+Started GET "/beers/2" for 127.0.0.1 at 2020-03-05 10:19:56 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.7ms | Allocations: 8298)
+
+
+Started GET "/breweries/new" for 127.0.0.1 at 2020-03-05 10:20:39 -0600
+Processing by BreweriesController#new as HTML
+  Rendering breweries/new.html.erb within layouts/application
+  Rendered breweries/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5122)
+
+
+Started POST "/breweries" for 127.0.0.1 at 2020-03-05 10:20:56 -0600
+Processing by BreweriesController#create as HTML
+  Parameters: {"authenticity_token"=>"VkZfMfp2SP9pcJThU/W3J/ruwhkiIL1tuUL3lnjwQKkbCXdPOCBO8sL2b68PJKiIsEi0V0ZrgvcLz11My8DHbg==", "brewery"=>{"name"=>"ABC Beerworks", "address"=>"111 Main Street", "city"=>"Cedar Park", "zip_code"=>"33333"}, "commit"=>"Add Brewery"}
+  Rendering breweries/create.html.erb within layouts/application
+  Rendered breweries/create.html.erb within layouts/application (Duration: 0.9ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4598)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:21:37 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 669)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5014)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2020-03-05 10:21:47 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:21:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1061)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brewery with 'id'=3):
+  
+app/controllers/breweries_controller.rb:21:in `show'
+Started GET "/analytics" for 127.0.0.1 at 2020-03-05 10:22:24 -0600
+Processing by UsersController#analytics as HTML
+  Rendering users/analytics.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/analytics.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "breweries"[0m
+  ↳ app/views/users/analytics.html.erb:14
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  ↳ app/views/users/analytics.html.erb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews"."content" FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:18:in `map'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews"."created_at" FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:24:in `map'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:28:in `map'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews"."rating" FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:32:in `map'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT("reviews"."rating") FROM "reviews"[0m
+  ↳ app/views/users/analytics.html.erb:33
+  Rendered users/analytics.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5842)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 1.4ms | Allocations: 10171)
+
+
+Started GET "/app/assets/stylesheets/analytics.css" for 127.0.0.1 at 2020-03-05 10:22:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/analytics.css"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reviews/new" for 127.0.0.1 at 2020-03-05 10:30:52 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/new.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/new.html.erb:19
+  Rendered reviews/new.html.erb within layouts/application (Duration: 24.3ms | Allocations: 14017)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 39.8ms | ActiveRecord: 0.5ms | Allocations: 23959)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-05 10:31:12 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"Gv1Qn46YbcGP4zDAplqgh6af+5LVWObTmAHnYZIhE25XsnjhTM5rzCRly476i78o7DmN3LET2UkqjE27IRGUqQ==", "review"=>{"content"=>"New Review", "beer_id"=>"5", "user_id"=>"3", "rating"=>"1"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["content", "New Review"], ["rating", 1], ["user_id", 3], ["beer_id", 5], ["created_at", "2020-03-05 16:31:12.197641"], ["updated_at", "2020-03-05 16:31:12.197641"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/beers?beer_id=5&content=New+Review&rating=1&user_id=3
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms | Allocations: 5583)
+
+
+Started GET "/beers?beer_id=5&content=New+Review&rating=1&user_id=3" for 127.0.0.1 at 2020-03-05 10:31:12 -0600
+Processing by BeersController#index as HTML
+  Parameters: {"beer_id"=>"5", "content"=>"New Review", "rating"=>"1", "user_id"=>"3"}
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 17927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 2.9ms | Allocations: 23011)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2020-03-05 10:31:30 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"Gv1Qn46YbcGP4zDAplqgh6af+5LVWObTmAHnYZIhE25XsnjhTM5rzCRly476i78o7DmN3LET2UkqjE27IRGUqQ==", "review"=>{"content"=>"Review of beer", "beer_id"=>"6", "user_id"=>"2", "rating"=>"3"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["content", "Review of beer"], ["rating", 3], ["user_id", 2], ["beer_id", 6], ["created_at", "2020-03-05 16:31:30.267191"], ["updated_at", "2020-03-05 16:31:30.267191"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 4.6ms | Allocations: 24122)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", "beer_id"=>"6", "content"=>"Review of beer", :controller=>"beers", "rating"=>"3", "user_id"=>"2"}, missing required keys: [:id]):
+  
+app/controllers/reviews_controller.rb:11:in `create'
+Started POST "/reviews" for 127.0.0.1 at 2020-03-05 10:31:58 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"Gv1Qn46YbcGP4zDAplqgh6af+5LVWObTmAHnYZIhE25XsnjhTM5rzCRly476i78o7DmN3LET2UkqjE27IRGUqQ==", "review"=>{"content"=>"Reviewing beer", "beer_id"=>"2", "user_id"=>"2", "rating"=>"3"}, "commit"=>"Create Review"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "rating", "user_id", "beer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["content", "Reviewing beer"], ["rating", 3], ["user_id", 2], ["beer_id", 2], ["created_at", "2020-03-05 16:31:59.042540"], ["updated_at", "2020-03-05 16:31:59.042540"]]
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/beers/2
+Completed 302 Found in 41ms (ActiveRecord: 3.6ms | Allocations: 23840)
+
+
+Started GET "/beers/2" for 127.0.0.1 at 2020-03-05 10:31:59 -0600
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBeer Load (0.5ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:24:in `show'
+  Rendering beers/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/views/beers/show.html.erb:23
+  Rendered beers/show.html.erb within layouts/application (Duration: 30.9ms | Allocations: 10766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 46.3ms | ActiveRecord: 1.7ms | Allocations: 15767)
+
+
+Started GET "/reviews/1" for 127.0.0.1 at 2020-03-05 10:43:10 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 392)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 6278)
+
+
+Started GET "/reviews/1" for 127.0.0.1 at 2020-03-05 10:43:36 -0600
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 6150)
+
+
+Started GET "/reviews/1/edit" for 127.0.0.1 at 2020-03-05 10:43:38 -0600
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for ReviewsController):
+  
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reviews/1/edit" for 127.0.0.1 at 2020-03-05 10:47:05 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:26:in `edit'
+  Rendering reviews/edit.html.erb within layouts/application
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/reviews/edit.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/reviews/edit.html.erb:18
+  Rendered reviews/edit.html.erb within layouts/application (Duration: 48.4ms | Allocations: 15015)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 67.7ms | ActiveRecord: 2.7ms | Allocations: 26777)
+
+
+Started PATCH "/reviews/1" for 127.0.0.1 at 2020-03-05 10:47:17 -0600
+Processing by ReviewsController#update as HTML
+  Parameters: {"authenticity_token"=>"N26M6celT2QhgLrLCr6kCX/gQA8/1PO0ITTxRtM2NDB6IaSXBfNJaYoGQYVWb7umNUY2QVufzC6TuVucYAaz9w==", "review"=>{"content"=>"Edited review", "beer_id"=>"2", "user_id"=>"2", "rating"=>"3", "tracked"=>"true"}, "commit"=>"Update Review", "id"=>"1"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:31:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:31:in `update'
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:31:in `update'
+  [1m[36mReview Update (2.1ms)[0m  [1m[33mUPDATE "reviews" SET "content" = ?, "rating" = ?, "user_id" = ?, "beer_id" = ?, "updated_at" = ? WHERE "reviews"."id" = ?[0m  [["content", "Edited review"], ["rating", 3], ["user_id", 2], ["beer_id", 2], ["updated_at", "2020-03-05 16:47:17.519192"], ["id", 1]]
+  ↳ app/controllers/reviews_controller.rb:31:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:31:in `update'
+Redirected to http://127.0.0.1:3000/reviews/1
+Completed 302 Found in 19ms (ActiveRecord: 4.3ms | Allocations: 6782)
+
+
+Started GET "/reviews/1" for 127.0.0.1 at 2020-03-05 10:47:17 -0600
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:22:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 5350)
+
+

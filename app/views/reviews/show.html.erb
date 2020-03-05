@@ -3,4 +3,6 @@
 
 <%= @review.content %>
 <br><br>
+<%= button_to "Edit Review", edit_review_path, method: :get %>
+<br>
 <%= button_to "Delete Review", review_path, method: :delete %>
