@@ -1,5 +1,16 @@
-<h1> Edit a Review </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app/assets/stylesheets/review.css">
+    <title>Beerdraft</title>
+</head>
+<body>
 
+<div class="review_edit_header">
+<h1> Edit a review: </h1>
+</div>
+
+<div class="review_form">
 <ul>
 <% @review.errors.full_messages.each do |msg| %>
 <li><%= msg %></li>
@@ -21,6 +32,8 @@ Enter a beer rating (1 to 5):<br>
 <%= number_field(:review, :rating, in: 1.0..5.0, step: 1.0) %>
 <br><br>
 <%= f.check_box :tracked, {}, true, false %> Track beer
-<br><br>
+<br>
 <%= f.submit %>
 <% end %>
+</div>
+</body>

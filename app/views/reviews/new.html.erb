@@ -7,8 +7,7 @@
 <body>
 
 <div class="review_header">
-
-<h1>Write a new beer review:</h1>
+<h1>Write a new review:</h1>
 
 <ul>
 <% @review.errors.full_messages.each do |msg| %>
@@ -17,6 +16,7 @@
 </ul>
 </div>
 
+<div class="new_review">
 <%= form_for @review do |f| %>
 Enter review content:
 <br>
@@ -35,5 +35,6 @@ Enter a beer rating (1 to 5):<br>
 <br><br>
 <%= f.submit %>
 <% end %>
+</div>
 
 </body>

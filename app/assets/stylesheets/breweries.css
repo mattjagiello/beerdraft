@@ -1,34 +1,41 @@
-.user_header {
+.brewery_index_header {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.brewery_index {
     text-align: left;
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
 }
 
-.reviewed_beers {
+.brewery_new_header {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.brewery_new {
     text-align: left;
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
 }
 
-.tracked_beers {
+.brewery_show_header {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.brewery_show {
     text-align: left;
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
-}
-
-.new_review {
-    text-align: left;
-    color: white;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 30px; 
-}
-
-.user_links {
-    text-align: left;
-    color: white;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 30px; 
 }
