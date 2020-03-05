@@ -2,7 +2,7 @@
 <h1>All the beers</h1>
 
 <% @beers.each do |b| %>
-   <%= link_to b.name, beer_path(b) %> by <%= link_to b.brand, beer_path(b) %> <br><br>
+   <%= link_to b.name, beer_path(b) %> by <%= b.brand %> <br><br>
     <%end%>
 
 
