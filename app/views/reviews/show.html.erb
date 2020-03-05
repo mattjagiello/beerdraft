@@ -6,26 +6,16 @@
 </head>
 <body>
 
-<div class="review_show_header">
-<% uid = @review.user_id %> 
-<% userrecord = User.find_by id: uid %>
-<%= userrecord.username.capitalize %> says:
-</div>
+Beer Review:
 
-<div class="review_main">
-<br>
 <%= @review.content %>
-<br><br>
-
-<% bid = @review.beer_id %>
-<% beerrecord = Beer.find_by id: bid %>
-<% @beername = beerrecord.name %>
-
-<%= link_to "Back to #{@beername} info", beer_path(@review[:beer_id])%>
 <br>
+<%= link_to "Back to Beer", beer_path(@review[:beer_id])%>
+<br><br>
 <%= button_to "Edit Review", edit_review_path, method: :get %>
+<br>
 <%= button_to "Delete Review", review_path, method: :delete %>
+<br><br>
 <%= button_to "Back to Beers Index", beers_path, method: :get %>
-</div>
 
 </body>
