@@ -8,3 +8,5 @@ Beers Sold:<% brewery = Brewery.find_by(id: @brewery) %>
 <li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
+
+<%= button_to "Back to Breweries", breweries_path, method: :get %>
