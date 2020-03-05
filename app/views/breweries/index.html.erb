@@ -1,2 +1,8 @@
-<h1>Breweries#index</h1>
-<p>Find me in app/views/breweries/index.html.erb</p>
+<h1>Find a brewery by name</h1>
+
+<% breweries = Brewery.select(:id, :name).distinct%>
+<ul>
+<% breweries.each do |x| %>
+<li><%= link_to x.name, brewery_path(x.id) %></li>
+<% end %>
+</ul>
