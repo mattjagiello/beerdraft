@@ -22,7 +22,7 @@
 <h2>Reviews </h2>
 <% @beer.reviews.each do |r| %> <br>
     User: <%= r.user_id %> <br>
-    Content:  <%= r.content %> <br>
+    <%= link_to "Content", review_path(r[:id]) %>:  <%= r.content %> <br>
     Rating:  <%= r.rating %> <br>
     Date: <%= r.created_at %><br>
  <%end%>
