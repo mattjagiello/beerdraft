@@ -5,6 +5,12 @@
     font-size: 20px;
 }
 
+.new_review {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 40px;
+}
+
 .review_show_header {
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -15,4 +21,16 @@
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 40px;
+}
+
+.review_edit_header {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.review_form {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
 }
