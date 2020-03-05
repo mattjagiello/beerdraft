@@ -7,7 +7,13 @@
    ABV: <%= @beer.abv %> <br>
    Strenght: <%= @beer.strength %> <br>
  <br>
-   Average Rating: <%=@beer.average_rating %> <br>
+
+ <% if @beer.average_rating == 0 %>
+        <p> Average Rating: Not rated yet</p>
+    <% else %> 
+            Average Rating: <%= @beer.average_rating %> <br>
+   <% end %>
+
    Likes: <%=@beer.likes %>  
    <%= button_to "Like", action: "like_beer" %>
 

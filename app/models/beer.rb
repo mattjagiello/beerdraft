@@ -19,11 +19,13 @@ class Beer < ApplicationRecord
         if self.reviews.size > 0
         self.reviews.average(:rating) 
         else
-            'no rated yet'
+            return 0 
         end
     end
 
-      
+    def self.top_beers
+        Beer.all.sort_by(&:average_rating).reverse.first(10)
+    end
 end
 
 
