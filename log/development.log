@@ -25318,3 +25318,85 @@ Processing by BreweriesController#index as HTML
 Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 5528)
 
 
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 11:07:06 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 856)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5205)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 11:07:49 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 6380)
+
+
+Started GET "/beers" for 127.0.0.1 at 2020-03-05 11:07:50 -0600
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/beers_controller.rb:4:in `index'
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.4ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/views/beers/index.html.erb:4
+  [1m[36mCACHE Beer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  ↳ app/models/beer.rb:27:in `sort_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 4]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 3]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 2]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 5]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 6]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:19:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."beer_id" = ?[0m  [["beer_id", 1]]
+  ↳ app/models/beer.rb:20:in `average_rating'
+  Rendered beers/index.html.erb within layouts/application (Duration: 53.4ms | Allocations: 19250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 59.0ms | ActiveRecord: 3.1ms | Allocations: 29630)
+
+
