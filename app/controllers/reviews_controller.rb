@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     if @review.valid?
       @review.save
-      redirect_to beers_path
+      redirect_to beer_path(review_params[:beer_id])
     else
       render :new
     end
@@ -20,6 +20,16 @@ class ReviewsController < ApplicationController
 
   def show
     @review = Review.find(params[:id])
+  end
+
+  def edit
+    @review = Review.find(params[:id])
+  end
+
+  def update
+    @review = Review.find(params[:id])
+    @review.update(review_params)
+    redirect_to @review
   end
 
   def destroy

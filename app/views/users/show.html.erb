@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app/assets/stylesheets/user_show.css">
+    <title>Beerdraft</title>
+</head>
+<body>
+<div class="user_header">
 <% if current_user == @user %>
   <h3><%= @user.username.capitalize %>'s Beer Collection</h3>
 <% end %>
-
+</div>
+<div class=reviewed_beers>
 Reviewed Beers:
 <% user_reviews = Review.where(user_id: @user)%>
 <% beer_ids = user_reviews.select(:beer_id).distinct %>
@@ -11,7 +20,9 @@ Reviewed Beers:
 <li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
+</div>
 
+<div class="tracked_beers">
 Tracked Beers:
 <% user_reviews = Review.where(user_id: @user) %>
 <ul>
@@ -21,14 +32,15 @@ Tracked Beers:
 <li><%= link_to beer.name, beer_path(beer) %></li>
 <% end %>
 </ul>
+</div>
 
-<br>
-Write a new review:
 <%= button_to "New Review", new_review_path, method: :get %>
 <br>
-
+<%= button_to "Beers Index", beers_path, method: :get %>
+<br>
 <% if logged_in? %>
     <%= button_to "Logout", root_path, method: :get %>
 <% else %>
     <%= button_to "Login Page", login_path, method: :get %>
 <% end %>
+</body>

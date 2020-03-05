@@ -1,0 +1,27 @@
+.user_header {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.reviewed_beers {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.tracked_beers {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.new_review {
+    text-align: left;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px; 
+}
