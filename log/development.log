@@ -24791,3 +24791,99 @@ Processing by ReviewsController#edit as HTML
 Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.6ms | Allocations: 8238)
 
 
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:51:33 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 11.3ms | ActiveRecord: 1.0ms | Allocations: 11110)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:52:15 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 467.6ms | Allocations: 148125)
+Completed 500 Internal Server Error in 471ms (ActiveRecord: 0.1ms | Allocations: 149307)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_brewery' for #<#<Class:0x00007f9e34a2c6d0>:0x00007f9e34255fd8>
+Did you mean?  new_brewery_url):
+     7: <% end %>
+     8: </ul>
+     9: <br><br>
+    10: <%= button_to "Add New Brewery", new_brewery, method: :get %>
+  
+app/views/breweries/index.html.erb:10
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:52:22 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6175)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:52:29 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 6164)
+
+
+Started GET "/breweries" for 127.0.0.1 at 2020-03-05 10:52:36 -0600
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "breweries"."id", "breweries"."name" FROM "breweries"[0m
+  ↳ app/views/breweries/index.html.erb:5
+  Rendered breweries/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6169)
+
+
+Started GET "/breweries/new" for 127.0.0.1 at 2020-03-05 10:52:42 -0600
+Processing by BreweriesController#new as HTML
+  Rendering breweries/new.html.erb within layouts/application
+  Rendered breweries/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5117)
+
+
+Started POST "/breweries" for 127.0.0.1 at 2020-03-05 10:55:03 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BreweriesController#create as HTML
+  Parameters: {"authenticity_token"=>"N3fylq3yVel9NcQZl4KeJ0VSqGsvpGRPRxwdHvIaJT56ONrob6RT5NazP1fLU4GID/TeJUvvW9X1kbfEQSqi+Q==", "brewery"=>{"name"=>"", "address"=>"", "city"=>"", "zip_code"=>""}, "commit"=>"Add Brewery"}
+[31mUnpermitted parameter: :zip_code[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/breweries_controller.rb:20:in `create'
+  [1m[36mBrewery Create (0.4ms)[0m  [1m[32mINSERT INTO "breweries" ("name", "address", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["address", ""], ["city", ""], ["created_at", "2020-03-05 16:55:03.566877"], ["updated_at", "2020-03-05 16:55:03.566877"]]
+  ↳ app/controllers/breweries_controller.rb:20:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/breweries_controller.rb:20:in `create'
+Redirected to http://127.0.0.1:3000/breweries/3
+Completed 302 Found in 19ms (ActiveRecord: 2.6ms | Allocations: 8483)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2020-03-05 10:55:03 -0600
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/breweries_controller.rb:28:in `show'
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/breweries/show.html.erb:6
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" INNER JOIN "beer_breweries" ON "beers"."id" = "beer_breweries"."beer_id" WHERE "beer_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  ↳ app/views/breweries/show.html.erb:7
+  Rendered breweries/show.html.erb within layouts/application (Duration: 17.8ms | Allocations: 8063)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 1.5ms | Allocations: 19154)
+
+

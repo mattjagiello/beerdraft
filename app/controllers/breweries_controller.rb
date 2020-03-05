@@ -15,9 +15,23 @@ class BreweriesController < ApplicationController
   end
 
   def create
+    @brewery = Brewery.new(brewery_params)
+    if @brewery.valid?
+      @brewery.save
+      redirect_to @brewery
+    else
+      render :new
+    end
   end
 
   def show
     @brewery = Brewery.find(params[:id])
   end
+
+  private
+
+  def brewery_params
+    params.require(:brewery).permit(:name, :address, :city, :zip_codes)
+  end
+
 end

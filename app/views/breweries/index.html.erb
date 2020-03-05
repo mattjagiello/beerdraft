@@ -6,3 +6,5 @@
 <li><%= link_to x.name, brewery_path(x.id) %></li>
 <% end %>
 </ul>
+
+<%= button_to "Add New Brewery", new_brewery_path, method: :get %>
